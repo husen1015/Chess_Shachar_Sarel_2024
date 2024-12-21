@@ -14,5 +14,7 @@ public:
 
 	std::string getKind() const;
 
+	int translator(std::string coords);
+
 	virtual void move(std::string coords);// moves the piece
 };

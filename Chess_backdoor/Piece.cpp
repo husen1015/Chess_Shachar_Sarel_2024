@@ -16,3 +16,12 @@ void Piece::move(std::string coords)
 {
 	this->_place = coords;
 }
+
+int Piece::translator(std::string coords)
+{
+	int num = 0;
+	num += (coords[1] - '1') * 8;
+	num += (coords[0] - 'a');
+
+	return num;
+}
