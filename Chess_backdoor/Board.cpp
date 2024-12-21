@@ -33,3 +33,15 @@ void Board::printBoard()
 	}
 }
 
+/*
+* this function recieves the starting point(the piece we move) and moves it to the ending point;
+*/
+void Board::move(std::string start, std::string end)
+{
+	if (_pieces[translator(start)].getKind() == "empty")
+	{
+		 throw std::string("No piece in the coordinates you mentioned");
+	}
+	_pieces[translator(start)].move(end);
+}
+
