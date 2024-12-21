@@ -15,6 +15,7 @@ public:
 	int translator(std::string coords); // converts chess coordinates into the array coordinates
 
 	void printBoard(); // prints the board
+	void move(std::string start, std::string finnish); //moves a piece on the board
 };
 
 #endif

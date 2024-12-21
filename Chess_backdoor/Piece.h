@@ -9,9 +9,10 @@ protected:
 
 public:
 	// builder
-	Piece() = default;
+	Piece();
 	Piece(std::string kind, std::string place, std::string color);
 
+	int translator(std::string coords); // converts chess coordinates into the array coordinates
 	std::string getKind() const;
 
 	virtual void move(std::string coords);// moves the piece
