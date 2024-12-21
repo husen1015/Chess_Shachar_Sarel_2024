@@ -10,6 +10,7 @@ Piece::Piece(std::string kind, std::string place, std::string color)
 	this->_kind = kind;
 	this->_place = place;
 	this->_color = color;
+	this->canEat = false;
 }
 
 /*

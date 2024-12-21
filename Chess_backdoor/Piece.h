@@ -6,6 +6,7 @@ protected:
 	std::string _kind;
 	std::string _place;
 	std::string _color;
+	bool canEat;
 
 public:
 	// builder
