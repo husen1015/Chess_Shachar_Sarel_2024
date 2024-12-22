@@ -5,7 +5,7 @@ Piece::Piece()
 	_kind = "empty";
 }
 
-Piece::Piece(std::string kind, std::string place, std::string color)
+Piece::Piece(std::string kind, std::string place, char color)
 {
 	this->_kind = kind;
 	this->_place = place;
@@ -29,6 +29,11 @@ int Piece::translator(std::string coords)
 std::string Piece::getKind() const
 {
 	return _kind;
+}
+
+char Piece::getColor() const
+{
+	return _color;
 }
 
 void Piece::move(std::string coords)

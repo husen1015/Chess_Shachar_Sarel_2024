@@ -6,7 +6,7 @@ rook::rook(std::string kind, std::string place, std::string color) : Piece( kind
 
 void rook::move(std::string coords)
 {
-	if (coords[0] == this->_place[0] && coords[1] == this->_place[1])
+	if (coords[0] == this->_place[0] || coords[1] == this->_place[1])
 	{
 		this->_place = coords;
 	}

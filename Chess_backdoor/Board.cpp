@@ -42,6 +42,30 @@ void Board::move(std::string start, std::string end)
 	{
 		 throw std::string("No piece in the coordinates you mentioned");
 	}
+
+	if (_pieces[translator(end)].getKind() != "empty" && _pieces[translator(end)].getColor() == _pieces[translator(start)].getColor())
+	{
+		throw std::string("there is a piece in the coordinates you mentioned");
+	}
+	if (movePlus(start, end) == false)
+	{
+		throw std::string("there is a piece in between the coordinates you mentioned");
+	}
 	_pieces[translator(start)].move(end);
 }
+
+bool Board::movePlus(std::string start, std::string end)
+{
+	int temp = translator(start);
+	while (temp != translator(end))
+	{
+		if (_pieces[temp].getKind() != "empty")
+		{
+			return false;
+		}
+		temp++;
+	}
+	return true;
+}
+
 
