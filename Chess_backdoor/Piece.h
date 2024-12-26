@@ -3,7 +3,7 @@
 class Piece
 {
 protected:
-	std::string _kind;
+	char _kind;
 	std::string _place;
 	char _color;
 	bool canEat;
@@ -11,10 +11,10 @@ protected:
 public:
 	// builder
 	Piece();
-	Piece(std::string kind, std::string place, char color);
+	Piece(char kind, std::string place, char color);
 
 	int translator(std::string coords); // converts chess coordinates into the array coordinates
-	std::string getKind() const;
+	char getKind() const;
 	char getColor() const;
 
 	int translator(std::string coords);

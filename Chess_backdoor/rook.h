@@ -3,9 +3,9 @@
 #include <iostream>
 
 
-class rook : Piece
+class Rook : Piece
 {
 public:
-	rook(std::string kind, std::string place, std::string color);
+	Rook(std::string kind, std::string place, char color);
 	virtual void move(std::string coords) override;
 };

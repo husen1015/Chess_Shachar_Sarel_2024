@@ -2,10 +2,10 @@
 
 Piece::Piece()
 {
-	_kind = "empty";
+	_kind = 'X';
 }
 
-Piece::Piece(std::string kind, std::string place, char color)
+Piece::Piece(char kind, std::string place, char color)
 {
 	this->_kind = kind;
 	this->_place = place;
@@ -26,7 +26,7 @@ int Piece::translator(std::string coords)
 	return num;
 }
 
-std::string Piece::getKind() const
+char Piece::getKind() const
 {
 	return _kind;
 }
