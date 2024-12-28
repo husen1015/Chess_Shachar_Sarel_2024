@@ -16,7 +16,7 @@ public:
 
 	void printBoard(); // prints the board
 	void move(std::string start, std::string end); //moves a piece on the board
-	bool movePlus(std::string start, std::string end); // checks if piece can move in vertical and horizotal
+	bool movePlus(std::string start, std::string end); // checks if piece can mov in vertical and horizotal
 };
 
 #endif
