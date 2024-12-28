@@ -1,4 +1,6 @@
 #include "Board.h"
+#include "Rook.h"
+#include "King.h"
 
 Board::Board()
 {
@@ -6,6 +8,7 @@ Board::Board()
 	_pieces = new Piece[8*8];
 
 	// when finish the all the classes add them to the board
+	_pieces[0] = Rook('R', "a1", 'W');
 }
 
 /*
@@ -38,12 +41,12 @@ void Board::printBoard()
 */
 void Board::move(std::string start, std::string end)
 {
-	if (_pieces[translator(start)].getKind() == "empty")
+	if (_pieces[translator(start)].getKind() == 'X')
 	{
 		 throw std::string("No piece in the coordinates you mentioned");
 	}
 
-	if (_pieces[translator(end)].getKind() != "empty" && _pieces[translator(end)].getColor() == _pieces[translator(start)].getColor())
+	if (_pieces[translator(end)].getKind() != 'X' && _pieces[translator(end)].getColor() == _pieces[translator(start)].getColor())
 	{
 		throw std::string("there is a piece in the coordinates you mentioned");
 	}
@@ -59,7 +62,7 @@ bool Board::movePlus(std::string start, std::string end)
 	int temp = translator(start);
 	while (temp != translator(end))
 	{
-		if (_pieces[temp].getKind() != "empty")
+		if (_pieces[temp].getKind() != 'X')
 		{
 			return false;
 		}

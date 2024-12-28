@@ -128,20 +128,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
-    <ClInclude Include="king.h" />
+    <ClInclude Include="King.h" />
     <ClInclude Include="Piece.h" />
     <ClInclude Include="Pipe.h" />
-    <ClInclude Include="rook.h" />
+    <ClInclude Include="Rook.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="king.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="rook.cpp" />
+=======
+    <ClCompile Include="King.cpp" />
+    <ClCompile Include="Rook.cpp" />
+>>>>>>> 0d73774ddf33e74412213976d2121fe376f5b32d
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

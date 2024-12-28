@@ -30,10 +30,10 @@
     <ClInclude Include="Piece.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="king.h">
+    <ClInclude Include="King.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rook.h">
+    <ClInclude Include="Rook.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,10 +50,13 @@
     <ClCompile Include="Board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="king.cpp">
+    <ClCompile Include="King.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rook.cpp">
+    <ClCompile Include="Rook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">

@@ -2,12 +2,9 @@
 #include "Piece.h"
 #include <iostream>
 
-class king : Piece
+class King : Piece
 {
-private:
-	bool isChecked;
-
 public:
-	king(std::string kind, std::string place, std::string color);
+	King(char kind, std::string place, char color);
 	virtual void move(std::string coords);
 };
