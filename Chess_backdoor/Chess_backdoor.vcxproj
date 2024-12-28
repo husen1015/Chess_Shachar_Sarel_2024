@@ -138,6 +138,7 @@
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="king.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="rook.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Piece.cpp" />
